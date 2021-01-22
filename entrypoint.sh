@@ -11,6 +11,7 @@ then
     echo "PostgreSQL started"
 fi
 
+cp settings_docker.py BooksREST/settings.py
 python manage.py flush --no-input
 python manage.py migrate
 
